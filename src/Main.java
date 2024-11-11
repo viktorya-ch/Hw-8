@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        //Task#1
+
         System.out.println(" //Task#1 ");
         int[] weight = new int[12];
         weight [0] = 1;
@@ -36,20 +36,32 @@ public class Main {
         weight1 [0] = 1;
         weight1 [1] = 2;
         weight1 [2] = 3;
-        {   System.out.println(Arrays.toString(new int[]{weight1[0]}) + "," + Arrays.toString (new int [] {weight1[1]}) + "," + Arrays.toString (new int[] {weight1[2]}));}
+        for (int i = 0; i <= 2; i++)
+        {   System.out.print(weight1[i]);
+        if (i <= 2 - 1){
+            System.out.print(",");
+        }}
         System.out.println( );
 
-        double [] box1 = {1.57,7.654,9.986,0,0,0,0,0,0,0,0,0}; {
-            System.out.println(Arrays.toString(new double[]{box1[0]}) + "," + Arrays.toString (new double[] {box1[1]}) + "," + Arrays.toString (new double[]{box1[2]}));}
+        double [] box1 = {1.57,7.654,9.986,0,0,0,0,0,0,0,0,0};
+        for (int r = 0; r <= 2; r++){
+          System.out.print(box1[r]);
+            if(r <= 2 - 1){
+                System.out.print(",");
+            }}
         System.out.println( );
 
-        int [] cell1 = new int[12];
+        int [] cell1 = new int [12];
         cell1 [2] = 4;
         cell1 [5] = 9;
         cell1 [7] = 12;
         cell1 [11] = 16;
-        {System.out.print( Arrays.toString(new int[]{cell1[2]}) + "," + Arrays.toString (new int [] {cell1[5]}) + "," + Arrays.toString (new int[] {cell1[7]}) + "," + Arrays.toString(new int[] {cell1[11]}) );
-        }
+        for ( int t = 0; t < cell1.length; t++){
+            System.out.print(cell1[t]);
+        if (t < cell1.length - 1){
+            System.out.print(",");
+
+        }}
         System.out.println( );
 
         System.out.println(" //Task#3 ");
@@ -57,15 +69,22 @@ public class Main {
         weight2 [0] = 1;
         weight2 [1] = 2;
         weight2 [2] = 3;
-      {
-            System.out.println(Arrays.toString ( new int[] {weight2[2]}) + "," + Arrays.toString (new int [] {weight2[1]}) + "," + Arrays.toString (new int[] {weight2[0]}) );
-        }
+        for (int s = weight2.length - 1; s >= 0; s--){
+
+        System.out.print(weight2[s]);
+        if (s !=0){
+                System.out.print(",");}}
+
         System.out.println( );
 
-        double []  box2 = {1.57,7.654,9.986,0,0,0,0,0,0,0,0,0};
-        {System.out.println(Arrays.toString (new double[]{box2[2]}) + "," + Arrays.toString (new double[] {box2[1]}) + "," + Arrays.toString (new double[]{box2[0]}));
+        double []  box2 = {1.57,7.654,9.986};
+        for (int g = box2.length - 1; g >= 0; g--){
+        System.out.print(box2[g]);
+        if (g != 0) {
+            System.out.print(",");
+        }}
 
-        }
+
         System.out.println( );
 
         int [] cell2 = new int[12];
@@ -73,7 +92,11 @@ public class Main {
         cell2 [5] = 9;
         cell2 [7] = 12;
         cell2 [11] = 16;
-        {System.out.println(Arrays.toString(new int[] {cell2[11]}) + "," + Arrays.toString (new int [] {cell1[7]}) + "," + Arrays.toString (new int[] {cell1[5]}) + "," + Arrays.toString(new int[] {cell1[2]}) );
+        for (int l = cell2.length - 1; l >= 0; l--){
+        System.out.print(cell2[l]);
+        if (l !=0){
+            System.out.print(",");
+        }
         }
         System.out.println( );
 
